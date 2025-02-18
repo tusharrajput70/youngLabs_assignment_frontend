@@ -1,8 +1,48 @@
-# React + Vite
+# Greeting App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple full-stack application that provides a personalized greeting based on user input. Built with Node.js, Express, React, and Tailwind CSS.
 
-Currently, two official plugins are available:
+## Features
+- Backend API built with Express.js
+- Frontend built with React and styled using Tailwind CSS
+- User input field and button to fetch greeting message
+- Notification sound on successful greeting response
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
+- **Frontend:** React, Tailwind CSS
+- **Backend:** Node.js, Express
+- **Deployment:** Vercel (frontend) / Render(backend)
+
+## Installation & Setup
+
+### Prerequisites
+- Node.js installed on your machine
+- npm or yarn package manager
+
+### Steps to Run Locally
+
+#### 1. Clone the Repository
+```bash
+git clone https://github.com/your-username/greet-app.git
+cd greet-app
+```
+
+#### 2. Backend Setup
+```bash
+cd backend
+npm install
+node server.js
+```
+
+#### 3. Frontend Setup
+```bash
+cd ../frontend
+npm install
+npm run dev
+```
+
+The frontend should now be running on `http://localhost:3000` and the backend on `http://localhost:5000`.
+
+## API Endpoint
+- `GET /api/greet?name=YourName` - Returns a greeting message.
+
